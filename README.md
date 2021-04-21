@@ -4,7 +4,7 @@
 测试方式为最严谨的控制变量法测试。
 使用celery 和 function_scheduling_distributed_framework，分别测试发布10万条任务和消费10万条任务
 
-不变的因素是  在代码本机安装的 redis + gevent 并发模型 + 执行最简单的 print 消费任务函数。
+不变的因素是  在代码本机安装的 redis + gevent 并发模型 + 执行最简单的 print + 相同cpu型号主频的机器 消费任务函数。
 变化的因素是  celery框架 和 function_scheduling_distributed_framework
 
 ```
