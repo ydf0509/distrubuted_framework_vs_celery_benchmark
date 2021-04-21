@@ -1,6 +1,5 @@
 # import gevent.monkey;gevent.monkey.patch_all()
 import time
-
 from fsdf_benchmark.fsdf_consume_benchmark import task_fun
 
 task_fun.clear()
