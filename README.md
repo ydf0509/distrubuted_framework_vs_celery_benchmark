@@ -78,7 +78,7 @@ task_acks_late = True
     发布 redis.lpush(msg)  
     消费 while True: 
               msg = redis.blpop()
-              task_fun(msg) 
+              task_fun(msg)   # 如果有io 那么就Threadpoolexecutor.submit(task_fun,msg)
      那么你会发现虽然这样写的很low，要手写操作redis没有一个app.task装饰器那么魔幻，但是性能那是要轻松暴击celery很多倍，至少是四到五倍。
      
 3、celery主要是对付重型任务，例如要调用消耗执行代码行数多的三方包或者有io，由于celery的中间件中来存储消息，那么多进程甚至跨机器共享任务分发就很容易，
