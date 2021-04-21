@@ -38,8 +38,8 @@ function_scheduling_distributed_framework 消费10万条耗时12秒。
 ## 测试结论
 ```
 在使 相同的redis中间件，相同的gevent并发模式 ，
-分布式函数掉地框架发布性能超过celery近20倍
-分布式函数掉地框架消费性能超过celery近30倍
+分布式函数调度框架发布性能超过celery近20倍
+分布式函数调度框架消费性能超过celery近30倍
 ```
 
 ## 造成具体性能差异原因，在分布式函数调度框架的readme已近说了。
