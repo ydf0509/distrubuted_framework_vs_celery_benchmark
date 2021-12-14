@@ -48,6 +48,14 @@ function_scheduling_distributed_framework 消费10万条耗时12秒。
 分布式函数调度框架消费性能超过celery近30倍
 ```
 
+## 还没开始测就怀疑就开始喷说不可能？
+```
+有的人做事情写代码很慢没耐心测，就开始怀疑喷。
+就不用看数据指标结论了，用实际感受的截图
+```
+[![ojrcyq.png](https://s4.ax1x.com/2021/12/14/ojrcyq.png)](https://imgtu.com/i/ojrcyq)
+
+
 ## 造成具体性能差异原因，在分布式函数调度框架的readme已近说了。
 
 
