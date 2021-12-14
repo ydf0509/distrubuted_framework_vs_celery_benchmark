@@ -13,6 +13,9 @@
 ```
 
 ## 测试方法
+
+<p style="color: red">tips：在做代码性能测试时候要减少控制台渲染打印输出,不然得出的性能结论会严重下降</p>
+
 ```
 分别
 1.1启动celery消费脚本 celery_benchmark/celery_publish_benchmark.py ，测试celery发布性能，
